@@ -15,16 +15,16 @@ const Home = () => {
           <Row>
             <Col lg="6" md="6">
               <div className="hero__content">
-                <h5 className="mb-3">Easy order & fast delivery</h5>
+                {/* <h5 className="mb-3">Easy order & fast delivery</h5>
                 <h1 className="mb-4 hero__title">
                   <span>Enjoy</span> your favorite Pizza
-                </h1>
+                </h1> */}
 
-                <button className="order__btn d-flex align-items-center justify-content-between ">
+                {/* <button className="order__btn d-flex align-items-center justify-content-between ">
                   <Link to="/pizzas">
                     Menu <i className="ri-arrow-right-s-line"></i>
                   </Link>
-                </button>
+                </button> */}
               </div>
             </Col>
 

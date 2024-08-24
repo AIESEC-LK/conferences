@@ -2,7 +2,8 @@ import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 
 import Home from "../pages/Home";
-import Pizzas from "../pages/Pizzas";
+import OC from "../pages/OC";
+import ConferenceDetails from "../pages/Conference-details";
 import PizzaDetails from "../pages/PizzaDetails";
 import Cart from "../pages/Cart";
 import Checkout from "../pages/Checkout";
@@ -12,8 +13,9 @@ const Routers = () => {
     <Routes>
       <Route path="/" element={<Navigate to="/home" />} />
       <Route path="/home" element={<Home />} />
-      <Route path="/pizzas" element={<Pizzas />} />
-      <Route path="/cart" element={<Cart />} />
+      <Route path="/OC" element={<OC />} />
+      <Route path="/conferencedetails" element={<ConferenceDetails />} />
+      {/* <Route path="/cart" element={<Cart />} /> */}
       <Route path="/checkout" element={<Checkout />} />
       <Route path="/pizzas/:id" element={<PizzaDetails />} />
     </Routes>

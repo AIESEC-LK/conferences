@@ -16,12 +16,12 @@ const nav__links = [
     path: "/home",
   },
   {
-    display: "Foods",
-    path: "/pizzas",
+    display: "OC",
+    path: "/OC",
   },
   {
-    display: "Cart",
-    path: "/cart",
+    display: "Conference Details",
+    path: "/conferencedetails",
   },
   {
     display: "Contact",
@@ -95,14 +95,14 @@ const Header = () => {
 
           {/* ======== nav right icons ========= */}
           <div className="nav__right d-flex align-items-center gap-4">
-            <span className="cart__icon" onClick={toggleCart}>
+            {/* <span className="cart__icon" onClick={toggleCart}>
               <i className="ri-shopping-basket-line"></i>
               <span className="cart__badge">{totalQuantity}</span>
             </span>
 
             <span className="mobile__menu" onClick={toggleMenu}>
               <i className="ri-menu-line"></i>
-            </span>
+            </span> */}
           </div>
         </div>
       </Container>

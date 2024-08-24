@@ -8,7 +8,7 @@ import Helmet from "../components/Helmet/Helmet";
 import ReactPaginate from "react-paginate";
 import "../styles/pagination.css";
 
-const Pizzas = () => {
+function OC() {
   const [pageNumber, setPageNumber] = useState(0);
 
   const searchedProduct = products;
@@ -42,19 +42,18 @@ const Pizzas = () => {
               <ProductCard item={item} />
             </Col>
           ))}
-          <div className="d-flex justify-content-center mt-4 mb-4">
+          {/* <div className="d-flex justify-content-center mt-4 mb-4">
             <ReactPaginate
               pageCount={pageCount}
               onPageChange={changePage}
               previousLabel={"Prev"}
               nextLabel={"Next"}
-              containerClassName="paginationBttns"
-            />
-          </div>
+              containerClassName="paginationBttns" />
+          </div> */}
         </Row>
       </Container>
     </Helmet>
   );
-};
+}
 
-export default Pizzas;
+export default OC;
